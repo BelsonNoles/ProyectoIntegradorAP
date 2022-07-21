@@ -1,0 +1,38 @@
+.row{
+  padding: 15px;
+}
+div{
+  background-color: rgb(157, 226, 157);
+  text-align: center;
+}
+
+/* pantalla gde*/
+@media(min-width:576px){
+  #fotomaxi{
+    position: absolute;
+    width: 15%;
+    border-radius: 100%;
+    left: 3%;
+    top: 300px;
+  }
+}
+
+/* pantalla chica*/
+@media(max-width:575px){
+  #fotomaxi{
+    position: absolute;
+    width: 30%;
+    border-radius: 100%;
+    left: 35%;
+    top: 160px;
+}
+}
+
+#nombre {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#titulofsjr{
+  font-size: 16px;
+}

@@ -1,4 +1,28 @@
+.row{
+  padding: 8px;
+  background-color: rgba(167, 247, 165, 0.842);
+}
+
 #logoAP{
   width: 180px;
-  margin-top: 15px;
+}
+
+img{
+  width: 50px;
+ }
+
+ .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media(max-width: 484px){
+  .container{
+    flex-direction: column;
+  }
+}
+
+.btn{
+  border-width: 3px;
 }

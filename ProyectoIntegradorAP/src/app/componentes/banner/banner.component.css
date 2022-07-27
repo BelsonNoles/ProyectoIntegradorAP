@@ -1,7 +1,7 @@
 #banner{
   width: 100%;
   height: 350px;
-  background-color: rgb(157, 226, 157) ;
+  position: relative;
 }
 /* pantalla chica-media */
 @media(max-width: 992px){
@@ -9,4 +9,7 @@
     width: 100%;
     height: 300px;
   }
+}
+.row{
+  background-color: rgba(134, 236, 114, 0.767);
 }

@@ -1,0 +1,17 @@
+img{
+  width: 7em;
+}
+
+.row{
+  padding: 15px;
+  background-color: rgba(227, 252, 221, 0.925);
+}
+
+.captura{
+  display: inline-block;
+  text-align: center ;
+}
+.descrip{
+  display: inline-block;
+  text-align: left;
+}

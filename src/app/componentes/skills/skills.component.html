@@ -1,0 +1,126 @@
+<div class="row">
+  <h1>Skills</h1>
+
+  <div class="col-lg-2">
+    <button class="btn btn-outline-dark" routerLink="/nuevaskill" *ngIf="isLogged">
+      Agregar Skill
+    </button>
+  </div>
+  </div>
+
+<div class="row">
+  <div class="text-center col-sm-6 col-md-4 col-lg-4 circprog" *ngFor="let skill of skill">
+    <circle-progress
+        [percent]="(skill.porcentaje)"
+        [radius]="100"
+        [title]="(skill.nombre)"
+        [showTitle]="true"
+        [outerStrokeWidth]="14"
+        [outerStrokeColor]="'green'"
+        [showInnerStroke]="false"
+        [animation]="true"
+        [animationDuration]="800"
+        [imageSrc]="''"
+        [showImage]="false"
+        [imageWidth]="90"
+        [imageHeight]="90"
+    ></circle-progress>
+    <div>
+      <td *ngIf="isLogged"><button class="btn btn-outline-succes" routerLink="/editskill/{{skill.id}}">
+        <i class="bi bi-pencil-fill"></i></button></td>
+      <td *ngIf="isLogged"><button class="btn btn-outline-succes" (click)="delete(skill.id)">
+        <i class="bi bi-trash3-fill"></i></button></td>
+    </div>
+
+    </div>
+ <!-- <div class="text-center col-sm-6 col-md-4 col-lg-4">
+  <circle-progress
+      [percent]="87"
+      [radius]="100"
+      [outerStrokeWidth]="14"
+      [outerStrokeColor]="'darkorange'"
+      [showInnerStroke]="false"
+      [animation]="true"
+      [animationDuration]="800"
+      [imageSrc]="'../assets/html-logo.png'"
+      [showImage]="true"
+      [imageWidth]="90"
+      [imageHeight]="90"
+  ></circle-progress>
+  </div>
+  <div class="text-center col-sm-6 col-md-4 col-lg-4">
+  <circle-progress
+      [percent]="85"
+      [radius]="100"
+      [outerStrokeWidth]="14"
+      [outerStrokeColor]="'#1380BF'"
+      [showInnerStroke]="false"
+      [animation]="true"
+      [animationDuration]="800"
+      [imageSrc]="'../assets/css-logo.png'"
+      [showImage]="true"
+      [imageWidth]="90"
+      [imageHeight]="90"
+  ></circle-progress>
+</div>
+<div class="text-center col-sm-6 col-md-4 col-lg-4">
+  <circle-progress
+      [percent]="80"
+      [radius]="100"
+      [outerStrokeWidth]="14"
+      [outerStrokeColor]="'#F1C40F'"
+      [showInnerStroke]="false"
+      [animation]="true"
+      [animationDuration]="800"
+      [imageSrc]="'../assets/javascript-logo.png'"
+      [showImage]="true"
+      [imageWidth]="100"
+      [imageHeight]="100"
+  ></circle-progress>
+</div>
+<div class="text-center col-sm-6 col-md-4 col-lg-4">
+  <circle-progress
+      [percent]="78"
+      [radius]="100"
+      [outerStrokeWidth]="14"
+      [outerStrokeColor]="'black'"
+      [showInnerStroke]="false"
+      [animation]="true"
+      [animationDuration]="800"
+      [imageSrc]="'../assets/github-logo.png'"
+      [showImage]="true"
+      [imageWidth]="90"
+      [imageHeight]="90"
+  ></circle-progress>
+</div>
+<div class="text-center col-sm-6 col-md-4 col-lg-4">
+  <circle-progress
+      [percent]="90"
+      [radius]="100"
+      [outerStrokeWidth]="14"
+      [outerStrokeColor]="'green'"
+      [showInnerStroke]="false"
+      [animation]="true"
+      [animationDuration]="800"
+      [imageSrc]="'../assets/pngwing.com.png'"
+      [showImage]="true"
+      [imageWidth]="90"
+      [imageHeight]="90"
+  ></circle-progress>
+</div>
+<div class="text-center col-sm-6 col-md-4 col-lg-4">
+  <circle-progress
+      [percent]="72"
+      [radius]="100"
+      [outerStrokeWidth]="14"
+      [outerStrokeColor]="'red'"
+      [showInnerStroke]="false"
+      [animation]="true"
+      [animationDuration]="800"
+      [imageSrc]="'../assets/inglaterra_edit.png'"
+      [showImage]="true"
+      [imageWidth]="100"
+      [imageHeight]="100"
+  ></circle-progress>
+  </div>-->
+</div>

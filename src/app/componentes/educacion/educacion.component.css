@@ -1,0 +1,21 @@
+.row{
+  padding: 15px;
+}
+div{
+  background-color: rgba(227, 252, 221, 0.925);
+}
+
+li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block-end: 1em;
+}
+
+h2, h3{
+  display: inline;
+}
+
+img{
+  width: 7em;
+}

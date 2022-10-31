@@ -1,0 +1,41 @@
+.row{
+  padding: 15px;
+}
+div{
+  background-color: rgba(227, 252, 221, 0.925);
+  text-align: center;
+}
+
+/* pantalla gde*/
+@media(min-width:576px){
+  #fotomaxi{
+    position: absolute;
+    width: 15%;
+    border-radius: 100%;
+    left: 3%;
+    top: 300px;
+    border: solid 1px rgba(21, 58, 12, 0.925);
+  }
+}
+
+/* pantalla chica*/
+@media(max-width:575px){
+  #fotomaxi{
+    position: absolute;
+    width: 30%;
+    border-radius: 100%;
+    left: 35%;
+    top: 160px;
+    border: solid 1px rgba(21, 58, 12, 0.925);
+
+}
+}
+
+#nombre {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#titulofsjr{
+  font-size: 16px;
+}

@@ -1,0 +1,22 @@
+<div class="row" *ngIf="persona">
+
+<div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+  <img [src]="persona?.img" class="img-fluid" id="fotomaxi">
+  </div>
+  <div id="nombreytit" class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+    <p id="nombre"> {{persona?.nombre}} {{persona?.apellido}}</p>
+    <p id="titulofsjr">Full Stack Developer Jr</p>
+  </div>
+  <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+    <span>
+    <h1>Acerca de mi</h1>
+    <p>{{persona?.descripcion}}
+    </p>
+
+  </span>
+</div>
+<div class="col-lg-6">
+<button type="button" class="btn btn-outline-dark" routerLink="/editacercade/1" *ngIf="isLogged">
+  Editar Persona
+</button></div>
+</div>

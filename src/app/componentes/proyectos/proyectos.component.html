@@ -1,19 +1,24 @@
 <div class="row">
-  <h1>Proyectos realizados</h1>
-  <div class="contenedor">
-  <div class="col-sm-8 col-md-8 col-lg-8 descrip">
-      <h2>Nombre del proyecto</h2>
-      <p>Descripcion del proyecto. Fecha de creacion, etc</p>
-    </div>
-    <div class="col-sm-4 col-md-4 col-lg-3 offset-lg-1 captura">
-      <img src="../../../assets/java-logo.png">
-    </div>
-  <div class="col-sm-8 col-md-8 col-lg-8 descrip">
-    <h2>Nombre del proyecto</h2>
-    <p>Descripcion del proyecto. Fecha de creacion, etc</p>
+  <h1>Proyectos Realizados</h1>
+  <div class="col-lg-2">
+    <button class="btn btn-outline-dark" routerLink="/nuevoproy" *ngIf="isLogged">
+      Agregar proyecto
+    </button>
   </div>
-  <div class="col-sm-4 col-md-4 col-lg-3 offset-lg-1 captura">
-    <img src="../../../assets/java-logo.png">
-  </div>
+
+  <div class="col-lg-1"></div>
+  <div class="col-lg-11">
+    <table class="table">
+      <tbody>
+        <tr *ngFor="let Proyecto of proyecto">
+          <td><h2>{{Proyecto.nombreP}}</h2></td>
+          <td>{{Proyecto.descripcionP}}</td>
+          <td *ngIf="isLogged"><button class="btn btn-outline-succes" routerLink="/editproy/{{Proyecto.id}}">
+            Editar <i class="bi bi-pencil-fill"></i></button></td>
+          <td *ngIf="isLogged"><button class="btn btn-outline-danger" (click)="delete(Proyecto.id)">
+            Borrar <i class="bi bi-trash3-fill"></i></button></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </div>
